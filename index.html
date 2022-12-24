@@ -5,6 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Budget Management App</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <script src="index.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <ion-icon name="wallet-outline" class="logo-img"></ion-icon>
+          <h1 class="logo-name">BUDGENIE</h1>
+        </div>
+        <div class="menu"></div>
+      </nav>
+
+      <main>
+        <div class="intro">
+          <p class="head-line"></p>
+          <div class="description">
+            <ol>
+              <li>Enter your name, and current balance</li>
+              <li>Add Transactions of your savings and expenditure manually</li>
+              <li>You can see the changes updating in the balance</li>
+            </ol>
+          </div>
+          <div class="form-container"></div>
+        </div>
+        <div class="acc-container hidden">
+          <div class="acc-stats__balance"></div>
+          <div class="acc-stats__movements"></div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
