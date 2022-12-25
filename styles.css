@@ -105,6 +105,12 @@ nav {
   width: 4rem;
   font-weight: 500;
   border-radius: 500px;
+  transition: all ease 300ms;
+}
+
+.submit-btn:hover {
+  color: #fff;
+  background-color: #0b7285;
 }
 
 .form-container input {
