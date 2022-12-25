@@ -32,7 +32,7 @@
       </nav>
 
       <main>
-        <div class="intro">
+        <div class="intro hidden">
           <p class="head-line"></p>
           <div class="description">
             <ol>
@@ -80,9 +80,32 @@
             </button>
           </div>
         </div>
-        <div class="acc-container hidden">
-          <div class="acc-stats__balance"></div>
-          <div class="acc-stats__movements"></div>
+        <div class="acc-container">
+          <div class="acc-balance-stats"></div>
+          <div class="acc-movements-container">
+            <div class="acc-movement-form">
+              <form action="" method="post">
+                <input
+                  class="movement amount__transaction"
+                  placeholder="Enter Amount"
+                />
+                <!-- <input type="text" placeholder="Description" /> -->
+                <textarea
+                  name="description"
+                  class="description"
+                  cols="30"
+                  rows="10"
+                  placeholder="Description"
+                ></textarea>
+                <select name="type" id="transactions" class="transactions">
+                  <option value="withdrawal">Withdrew/Spent</option>
+                  <option value="credited">Credited/Receieved</option>
+                </select>
+                <button type="submit">ADD</button>
+              </form>
+            </div>
+            <div class="acc-movement-display"></div>
+          </div>
         </div>
       </main>
     </div>

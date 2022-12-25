@@ -30,7 +30,7 @@ nav {
 }
 
 .hidden {
-  opacity: 0;
+  display: none;
 }
 
 /********************* STYLING LOGO **************************** */
@@ -97,7 +97,8 @@ nav {
   border-radius: 8px;
 }
 
-.submit-btn {
+.submit-btn,
+.acc-movement-form form button {
   background-color: transparent;
   color: #0b7285;
   border: 1px solid #0b7285;
@@ -108,13 +109,17 @@ nav {
   transition: all ease 300ms;
 }
 
-.submit-btn:hover {
+.submit-btn:hover,
+.acc-movement-form form button:hover {
   color: #fff;
   background-color: #0b7285;
+  cursor: pointer;
 }
 
-.form-container input {
-  text-align: center;
+.form-container input,
+.acc-movement-form form input,
+.acc-movement-form form select,
+.description {
   padding: 0.5rem;
   border-radius: 5px;
   min-width: 250px;
@@ -122,7 +127,10 @@ nav {
   line-height: 150%;
 }
 
-.form-container input:focus {
+.form-container input:focus,
+.acc-movement-form form input,
+.acc-movement-form form select,
+.description {
   outline: none;
 }
 
@@ -154,6 +162,21 @@ nav {
   place-items: center;
   top: -2rem;
   left: -2rem;
+}
+
+/* ************************ ACCOUNT MOVEMENT FORM ******************* */
+
+.acc-movement-form form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 3rem 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 /* *********************** ANIMATIONS ********************* */
