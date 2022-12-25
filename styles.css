@@ -33,6 +33,11 @@ nav {
   display: none;
 }
 
+h1,
+h2 {
+  font-weight: 400;
+}
+
 /********************* STYLING LOGO **************************** */
 
 .logo {
@@ -166,6 +171,35 @@ nav {
 
 /* ************************ ACCOUNT MOVEMENT FORM ******************* */
 
+.acc-container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: auto;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+.acc-balance-stats {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.acc-movements-container {
+  display: flex;
+  width: fit-content;
+  /* padding: 1.5rem; */
+  gap: 2rem;
+  margin: auto;
+  border-radius: 6px;
+}
+
 .acc-movement-form form {
   display: flex;
   flex-direction: column;
@@ -177,6 +211,43 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+}
+
+.acc-movement-display {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.acc-movement {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 300px;
+  border-radius: 6px;
+}
+
+.movement-stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movement-type {
+  font-size: 11px;
+  font-weight: 500;
+  width: fit-content;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ef4444;
+  border-radius: 2px;
+  padding: 3px 4px;
+}
+
+.movement-desc p {
+  font-size: 12px;
 }
 
 /* *********************** ANIMATIONS ********************* */
