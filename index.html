@@ -5,6 +5,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Budget Management App</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <script src="index.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <ion-icon name="wallet-outline" class="logo-img"></ion-icon>
+          <h1 class="logo-name">BUDGENIE</h1>
+        </div>
+        <div class="menu"></div>
+      </nav>
+
+      <main>
+        <div class="intro hidden">
+          <p class="head-line"></p>
+          <div class="description">
+            <ol>
+              <li>
+                <div class="feature">
+                  <div class="feature-count">1</div>
+                  Enter your name, and current balance
+                </div>
+              </li>
+              <li>
+                <div class="feature">
+                  <div class="feature-count">2</div>
+                  Add Transactions of your savings and expenditure manually
+                </div>
+              </li>
+              <li>
+                <div class="feature">
+                  <div class="feature-count">3</div>
+                  You can see the changes updating in the balance
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="form-container">
+            <div style="width: 100%; height: 6px"></div>
+
+            <div class="logo">
+              <ion-icon name="wallet-outline" class="logo-img"></ion-icon>
+              <h1 class="logo-name">BUDGENIE</h1>
+            </div>
+
+            <div style="width: 100%; height: 6px"></div>
+            <p class="tag">
+              “Budgeting only has one rule
+              <br />
+              Do not go over budget.”
+            </p>
+            <input class="user-name" placeholder="Name" />
+            <input class="curr-balance" placeholder="Current Balance" />
+            <div style="width: 100%; height: 6px"></div>
+
+            <button class="submit-btn">
+              START
+              <!-- <ion-icon name="arrow-forward-outline" class="go"></ion-icon -->
+            </button>
+          </div>
+        </div>
+        <div class="acc-container">
+          <div class="acc-balance-stats">
+            <div class="date-time-wrapper">
+              <p class="">Account balance</p>
+              <p class="date-time">As of 25th Dec</p>
+            </div>
+            <h1 class="balance-amt">$39200</h1>
+          </div>
+          <div class="acc-movements-container">
+            <div class="acc-movement-form">
+              <form action="" method="post">
+                <input
+                  class="movement amount__transaction"
+                  placeholder="Enter Amount"
+                />
+                <!-- <input type="text" placeholder="Description" /> -->
+                <textarea
+                  name="description"
+                  class="description"
+                  cols="30"
+                  rows="10"
+                  placeholder="Description"
+                ></textarea>
+                <select name="type" id="transactions" class="transactions">
+                  <option value="withdrawal">Withdrew/Spent</option>
+                  <option value="credited">Credited/Receieved</option>
+                </select>
+                <button type="submit">ADD</button>
+              </form>
+            </div>
+            <div class="acc-movement-display">
+              <div class="acc-movement">
+                <div class="movement-stat">
+                  <p class="movement-type">withdrawal</p>
+                  <h2 class="movement-amount">$200</h2>
+                </div>
+                <div class="movement-desc">
+                  <p class="movement-date-time">At 11:30 PM on August 30th</p>
+                  <p class="movement-desc-text">Some Random Text</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>

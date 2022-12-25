@@ -1,0 +1,253 @@
+*,
+*::after,
+*::before,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+body {
+  background-image: url(./imgs/bg-img.webp);
+  background-size: cover;
+  object-fit: cover;
+}
+
+nav {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0 2rem;
+}
+
+.container {
+  height: 100vh;
+  backdrop-filter: blur(5px);
+}
+
+.hidden {
+  display: none;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+}
+
+/********************* STYLING LOGO **************************** */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.logo-img {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #22b8cf;
+}
+
+.logo-name {
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: 0.07em;
+}
+
+/*************** INTRO CONTAINER *****************/
+
+.intro {
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.intro ol {
+  color: #fff;
+  display: flex;
+  gap: 1.5rem;
+  width: 70%;
+  list-style: none;
+  margin: auto;
+}
+
+.intro ol li {
+  line-height: 1.5;
+  width: 100%;
+  max-height: fit-content;
+  text-align: center;
+  background-color: #15aabf;
+  padding: 1rem;
+  border-radius: 8px;
+  border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #0b7285) 1 100%;
+}
+
+/**************** FORM CONTAINER ****************/
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 2rem;
+  margin: auto;
+  margin-top: 1rem;
+  gap: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.503);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+
+.submit-btn,
+.acc-movement-form form button {
+  background-color: transparent;
+  color: #0b7285;
+  border: 1px solid #0b7285;
+  padding: 0.5rem;
+  width: 4rem;
+  font-weight: 500;
+  border-radius: 500px;
+  transition: all ease 300ms;
+}
+
+.submit-btn:hover,
+.acc-movement-form form button:hover {
+  color: #fff;
+  background-color: #0b7285;
+  cursor: pointer;
+}
+
+.form-container input,
+.acc-movement-form form input,
+.acc-movement-form form select,
+.description {
+  padding: 0.5rem;
+  border-radius: 5px;
+  min-width: 250px;
+  border: 1px solid #777;
+  line-height: 150%;
+}
+
+.form-container input:focus,
+.acc-movement-form form input,
+.acc-movement-form form select,
+.description {
+  outline: none;
+}
+
+.form-container input::-webkit-input-placeholder {
+  font-size: 14px;
+  text-align: center;
+  color: #777;
+}
+
+.tag {
+  font-style: italic;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #444;
+}
+
+.feature {
+  position: relative;
+}
+
+.feature-count {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #0b7285;
+  display: grid;
+  place-items: center;
+  top: -2rem;
+  left: -2rem;
+}
+
+/* ************************ ACCOUNT MOVEMENT FORM ******************* */
+
+.acc-container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: auto;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+.acc-balance-stats {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.acc-movements-container {
+  display: flex;
+  width: fit-content;
+  /* padding: 1.5rem; */
+  gap: 2rem;
+  margin: auto;
+  border-radius: 6px;
+}
+
+.acc-movement-form form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 3rem 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.acc-movement-display {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.acc-movement {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 300px;
+  border-radius: 6px;
+}
+
+.movement-stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movement-type {
+  font-size: 11px;
+  font-weight: 500;
+  width: fit-content;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ef4444;
+  border-radius: 2px;
+  padding: 3px 4px;
+}
+
+.movement-desc p {
+  font-size: 12px;
+}
+
+/* *********************** ANIMATIONS ********************* */
