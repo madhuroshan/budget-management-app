@@ -185,9 +185,17 @@ h2 {
 
 .acc-balance-stats {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   background-color: #fff;
   border-radius: 6px;
+  overflow: hidden;
+}
+
+.acc-balance {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
   padding: 1rem;
 }
 
@@ -248,6 +256,29 @@ h2 {
 
 .movement-desc p {
   font-size: 12px;
+}
+
+.welcome-sign-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #22b8cf;
+  padding: 1rem;
+}
+
+.welcome-sign-container .logo .logo-img {
+  color: #0b7285;
+  height: 2rem;
+  width: 2rem;
+}
+
+.welcome-sign-container .logo .logo-name {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.welcome-sign-container h2 {
+  color: #fff;
 }
 
 /* *********************** ANIMATIONS ********************* */
